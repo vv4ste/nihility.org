@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Nerko One';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-size-adjust: none;
+}
+
+.text {
+    color: white;
+    margin: 0px;
+    margin-bottom: 20px; /* Adjust spacing between text and icon */
+    vertical-align: middle;
+}
+
+.banner {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.banner-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 20%;
+    border: 5px solid white;
+}
+
+.provider {
+    float: left;
+    margin: 10px;
+    min-width: 500px;
+}
+
+.disc {
+    float: left;
+    height: 56px;
+}
+
+.avatar {
+    display: inline-block;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.recent-img {
+    display: inline;
+    height: 100px;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.roles {
+    float: right;
+    text-align: right;
+}
+
+.date {
+    float: right;
+    text-align: right;
+    color: lightgray;
+}
+
+.editor {
+    border-left: 4px solid white;
+    border-top: 1px solid white;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-right: 8px;
+}
+
+.translation {
+    border-left: 4px solid white;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.in-progress {
+    color: darkgray !important;
+}
+
+.favicon {
+    height: 25px;
+    margin-left: 5px;
+    vertical-align: text-bottom;
+}
+
+@media screen and (min-device-width: 801px) {
+    .text {
+        font-size: 40px;
+    }
+    .roles {
+        font-size: 28px;
+    }
+    .translation {
+        font-size: 20px;
+    }
+    .avatar {
+        height: 100px;
+    }
+}
+@media screen and (max-device-width: 800px) {
+    .text {
+        font-size: 56px;
+    }
+    .roles {
+        font-size: 40px;
+    }
+    .translation {
+        font-size: 40px;
+    }
+    .avatar {
+        height: 150px;
+    }
+}

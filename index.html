@@ -1,138 +1,117 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta property="og:title" content="Nihility">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://nihility.org/">
+        <meta property="og:image" content="https://nihility.org/assets/images (1) copy.png">
+        <meta property="og:description" content="Another random translation site.">
+        <meta name="theme-color" content="#FFFFFF">
+
+        <!-- Include this to make the og:image larger -->
+        <!-- <meta name="twitter:card" content="summary_large_image"> -->
+
         <title>Nihility</title>
         <link rel="icon" type="image/x-icon" href="assets/images (1) copy.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
-        <style>
-            body {
-                background-color: rgb(0, 0, 0);
-                font-family: 'Nerko One';
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
 
-            .text {
-                color: white;
-                margin: 0px;
-                margin-bottom: 20px; /* Adjust spacing between text and icon */
-                font-size: 40px;
-                vertical-align: middle;
-            }
-
-            .img {
-                float: left;
-                height: 700px;
-            }
-
-            .provider {
-                float: left;
-                margin: 10px;
-                min-width: 500px;
-            }
-
-            .disc {
-                float: left;
-                height: 49px;
-            }
-
-            .avatar {
-                display: inline-block;
-                height: 100px;
-                vertical-align: middle;
-            }
-
-            .recent-img {
-                display: inline;
-                height: 100px;
-                vertical-align: middle;
-            }
-
-            a {
-                text-decoration: none;
-                color: white;
-            }
-
-            .roles {
-                float: right;
-                font-size: 28px;
-                text-align: right;
-            }
-
-            .translation {
-                font-size: 20px;
-                max-width: 500px;
-                border-left: 4px solid white;
-                padding-left: 10px;
-            }
-
-        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="src/basic.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <p class="text" style="text-align: center;">Welcome to Nihility</p>
-            <p class="text">The site is in Progress...</p>
+        <div class="container-lg">
+            <p class="text d-flex justify-content-center">Welcome to Nihility</p>
+
+            <p class="text d-flex justify-content-center">
+                <a href="https://discord.gg/pvynKdsd8v" target="_blank">
+                    <img class="disc" src="assets/003-discord copy.png" alt="Discord Icon">
+                    &nbsp;
+                    Join us on discord
+                </a>
+            </p>
         </div>
-        <div class="container">
-            <div class="provider">
-                <p class="text">Meet the team:</p>
-                <p class="text">
-                    <img class="avatar" src="assets/asa.png">
-                    &nbsp;
-                    .asapgiri
-                    <span class="roles">
-                        translator<br>
-                        proofreader
-                    </span>
-                </p>
-                <p class="text">
-                    <img class="avatar" src="assets/wxxstd.png">
-                    &nbsp;
-                    wxxstd
-                    <span class="roles">
-                        editor<br>
-                        typesetter
-                    </span>
-                </p>
-                <p class="text">
-                    <img class="avatar" src="assets/rd.szili.png">
-                    &nbsp;
-                    rd.szili
-                    <span class="roles">
-                        translator<br>
-                        proofreader
-                    </span>
-                </p>
-
-                <p class="text">Recent works:</p>
-                <p class="text translation">
-                    <a href="https://nhentai.net/g/530496/" target="_blank">
-                            (Kami no Eichi 8) [Kadutikiya (Kaduki)] Renai Shoshinsha Rokusen-nen | To the inexperienced 6000 year old you (Genshin Impact) [English] [Nihility]
-                    </a>
-                </p>
-
-                <p class="text">
-                    <a href="https://discord.gg/QgQ2yvteZZ" target="_blank">
-                        <img class="disc" src="assets/003-discord copy.png" alt="Discord Icon">
-                        &nbsp;
-                        Join us on discord
-                    </a>
-                </p>
-                <p class="text">
-                    <a href="https://www.instagram.com/arb1_fanarts/" target="_blank">
-                        <img class="disc" src="assets/insta.png">
-                        &nbsp;
-                        Find more fanarts
-                    </a>
-                </p>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner">
+                        <img class="banner-img" src="assets/kyaru-moan.png">
+                    </div>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p class="text">Meet the team:</p>
+                    <p class="text editor">
+                        <img class="avatar" src="assets/asa.png">
+                        &nbsp;
+                        .asapgiri
+                        <span class="roles">
+                            translator<br>
+                            proofreader
+                        </span>
+                    </p>
+                    <p class="text editor">
+                        <img class="avatar" src="assets/wxxstd.png">
+                        &nbsp;
+                        wxxstd
+                        <span class="roles">
+                            editor<br>
+                            typesetter
+                        </span>
+                    </p>
+                    <p class="text editor">
+                        <img class="avatar" src="assets/rd.szili.png">
+                        &nbsp;
+                        rd.szili
+                        <span class="roles">
+                            translator<br>
+                            proofreader
+                        </span>
+                    </p>
+                </div>
 
-            <div class="provider">
-                <img class="img" src="assets/arb1-nagatoro.png">
+                <div class="col-lg-6">
+                    <p class="text">Recent works:</p>
+                    <div id="translations">
+                        <p class="text translation">
+                            <a href="https://nhentai.net/g/546037/" target="_blank">
+                                [Chirimen Naoyuki (Naoyuki)] (Princess Connect! Re:Dive)
+                                <br>
+                                Kyaru-chan is wild in the mating season!?
+                            </a>
+                            <br>
+                            <a href="https://nhentai.net/g/546037/" target="_blank">
+                                <img src="https://nhentai.net/favicon.ico" alt="nhentai.net" class="favicon">
+                                nhentai
+                            </a>
+                            <a href="https://e-hentai.org/g/3171969/245a553fd3/" target="_blank">
+                                <img src="https://e-hentai.org/favicon.ico" alt="e-hentai.org" class="favicon">
+                                e-hentai
+                            </a>
+                            <span class="date">2024-12-24</span>
+                        </p>
+
+                        <p class="text translation">
+                            <a href="https://nhentai.net/g/530496/" target="_blank">
+                                [Kadutikiya (Kaduki)] (Genshin Impact)
+                                <br>
+                                To the inexperienced 6000 year old you
+                            </a>
+                            <br>
+                            <a href="https://nhentai.net/g/530496/" target="_blank">
+                                <img src="https://nhentai.net/favicon.ico" alt="nhentai.net" class="favicon">
+                                nhentai
+                            </a>
+                            <a href="https://e-hentai.org/g/3059227/88342cd22b/" target="_blank">
+                                <img src="https://e-hentai.org/favicon.ico" alt="e-hentai.org" class="favicon">
+                                e-hentai
+                            </a>
+                            <span class="date">2024-09-15</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
