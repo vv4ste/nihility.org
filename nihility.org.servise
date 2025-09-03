@@ -1,0 +1,14 @@
+[Unit]
+Description=A random translation teams site
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=radxa
+WorkingDirectory=/repo/nihility.org
+ExecStart=/repo/nihility.org/nihility.org
+
+[Install]
+WantedBy=multi-user.target

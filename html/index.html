@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<div class="container-lg">
+    <div class="row">
+        <div class="col-lg-6">
+            <p class="text d-flex justify-content-center">Welcome to Nihility</p>
+        </div>
+
+        <div class="col-lg-6">
+            <p class="text d-flex justify-content-center">
+                <a href="https://discord.gg/pvynKdsd8v" target="_blank">
+                    <img class="disc" src="003-discord copy.png" alt="Discord Icon">
+                    &nbsp;
+                    Join us on discord
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="banner">
+                <img class="banner-img" src="kyaru-moan.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="text">Introduction:</p>
+            <p class="text intro">
+                <b>Why hello there!</b>
+                We are a small team, who enjoys the act of giving, and the cause of joy and happyness.
+                We mainly started translating out of curiosity, and the urge to learn the japanese language.
+                And what is better, than some <b>hard</b>, hands on experience, while you can also
+                cause a little happyness!
+                Hope you are all enjoying our works, and hey!? Hit us up on discord if you have any questions,
+                suggestions, or just want to hang out.<br>
+                Welp, <b>HAPPY NEW YEAR EVERYONE!!?!</b> May the next year also contain the best wankings of our lives!
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <p class="text">Meet the team:</p>
+            {{range .Staff}}
+            <p class="text editor">
+                <img class="avatar" src="{{.Avatar}}">
+                &nbsp;
+                {{.Nick}}
+                <span class="roles">
+                    {{range .Roles}}
+                    {{.}}<br>
+                    {{end}}
+                </span>
+            </p>
+            {{end}}
+        </div>
+
+        <div class="col-lg-6">
+            <p class="text">Recent works:</p>
+            <div id="translations">
+                {{range .Translations}}
+                <p class="text translation">
+                    <a href="https://nhentai.net/g/{{.NhId}}/" target="_blank">
+                        {{.From}}
+                        <br>
+                        {{.Title}}
+                    </a>
+                    <br>
+                    <a href="https://nhentai.net/g/{{.NhId}}/" target="_blank">
+                        <img src="https://nhentai.net/favicon.ico" alt="nhentai.net" class="favicon">
+                        nhentai
+                        <span id="{{.NhId}}"></span>
+                        <span class="likes">{{.NhLikes}}</span>
+                    </a>
+                    <a href="https://e-hentai.org/g/{{.EhId}}/" target="_blank">
+                        <img src="https://e-hentai.org/favicon.ico" alt="e-hentai.org" class="favicon">
+                        e-hentai
+                    </a>
+                    <span class="date">{{.Date}}</span>
+                </p>
+                {{end}}
+            </div>
+        </div>
+    </div>
+</div>
